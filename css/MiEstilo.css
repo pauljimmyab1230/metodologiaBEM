@@ -1,7 +1,36 @@
 :root{
+    --primario: #9c27b0;
     --primarioOcuro: #89119d;
     --secundario: #ffce00;
+    --blanco: #ffffff;
     --fuentePrincipal:'Staatliches', cursive;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: var(--primario);
+}
+
+h1,h2,h3{
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+a{
+    text-decoration: none;
+}
+img{
+    inline-size: 100%;
 }
 .navegador{
     background-color: var(--primarioOcuro);
@@ -21,4 +50,37 @@
 }
 .navegador__item--select{
     color: var(--secundario);
+}
+
+/* productos */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.producto{
+    background-color: var(--primarioOcuro);
+    padding: 1rem;
+}
+.producto__nombre{
+    font-size: 4rem;
+    color: var(--blanco);
+    font-weight: bold;
+}
+.producto__precio{
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+.producto__nombre,
+.producto__precio{
+    font-family: var(--fuentePrincipal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+.grafico{
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-column: 1 / 3;
 }
