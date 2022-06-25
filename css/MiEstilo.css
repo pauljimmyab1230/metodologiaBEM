@@ -77,9 +77,3 @@ img{
     text-align: center;
     line-height: 1.2;
 }
-.grafico{
-    min-height: 30rem;
-    background-repeat: no-repeat;
-    background-size:cover;
-    grid-column: 1 / 3;
-}
