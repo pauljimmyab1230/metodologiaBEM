@@ -1,0 +1,24 @@
+:root{
+    --primarioOcuro: #89119d;
+    --secundario: #ffce00;
+    --fuentePrincipal:'Staatliches', cursive;
+}
+.navegador{
+    background-color: var(--primarioOcuro);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.navegador__item{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 30px;
+    text-decoration: none;
+}
+.navegador__item:hover{
+    color: var(--secundario);
+}
+.navegador__item--select{
+    color: var(--secundario);
+}
